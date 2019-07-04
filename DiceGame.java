@@ -22,5 +22,7 @@ public class DiceGame {
 		int totalValue = die1.getFaceValue()+die2.getFaceValue();
 
 		System.out.println( totalValue );
+		if( totalValue > 7 ) System.out.println( player + " won!" );
+		else System.out.println( player + " lost!" );
 	}
 }
